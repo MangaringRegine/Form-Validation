@@ -1,0 +1,19 @@
+label {
+    width: 300px;
+    display: inline-block;
+}
+.input-group span {
+	
+	color: red;
+
+}
+
+button {
+	background: blue;
+	color: white;
+}
+
+.Cancel-error {
+	background: red;
+	color: white;
+}

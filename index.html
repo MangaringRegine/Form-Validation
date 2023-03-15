@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    
+    <h4> Online Member User ID Registration<h4>
+    <hr color="black">
+    <h5><font color="red">*Required Field</font></h5>
+    <h4> Please supply the following information as reported to the Social Security System</h4>
+
+    <body>
+
+    <div class="container">
+    <form>
+
+    <div class="input-group">
+    <label>*CRN / SS Number :</label>
+    <input type="text" placeholder="" id="CRN-number" size="30" onkeyup="validateCRN()"required>
+    <span id="CRN-error"></span></div>
+
+    <h5><font color="red">Kindly inform your network administrator not to block mail from sss.gov.ph.</font></h5>
+
+    <div class="input-group">
+    <label>*Email Address :</label>
+    <input type="text" placeholder="" id="CRN-number1" size="30" onkeyup="validateCRN1()"required>
+    <span id="CRN-error1"></span></div>
+
+    <div class="input-group">
+    <label>*Confirm Email Address:</label>
+    <input type="text" placeholder="" id="CRN-number2" size="30" onkeyup="validateCRN2()"required>
+    <span id="CRN-error2"></span></div>
+
+    <h5><font color="red">Length must be 8 characters. First character must be alphabetic. No special characters except underscore.(Ex.Ram_1234) </font></h5>
+
+    <div class="input-group">
+    <label>*Preferred User ID:</label>
+    <input type="text" placeholder="" id="CRN-number3" size="30" onkeyup="validateCRN3()"required>
+    <span id="CRN-error3"></span></div>
+
+    <div class="input-group">
+    <label>*Confirm Preferred User ID:</label>
+    <input type="text" placeholder="" id="CRN-number4" size="30" onkeyup="validateCRN4()"required>
+    <span id="CRN-error4"></span></div>
+
+    <h5><font color="red">The following characters are not allowed: # % ( ) \ -- ' " || && \* */</font></h5>
+
+    <div class="input-group">
+    <label>*Surename/Last Name:</label>
+    <input type="text" placeholder="" id="CRN-number5" size="30" onkeyup="validateCRN5()" title="The following characters are not allowed: # % ( ) \ -- ' || && \* */">
+    <span id="CRN-error5"></span></div>
+
+    <div class="input-group">
+    <label>*Given Name:</label>
+    <input type="text" placeholder="" id="CRN-number6" size="30" onkeyup="validateCRN6()"title="The following characters are not allowed: # % ( ) \ -- ' || && \* */">
+    <span id="CRN-error6"></span></div>
+
+    <div class="input-group">
+    <label>*Middle Name:</label>
+    <input type="text" placeholder="" id="CRN-number7" size="30" onkeyup="validateCRN7()" title="The following characters are not allowed: # % ( ) \ -- ' || && \* */">
+    <span id="CRN-error7"></span></div>
+
+    <div class="input-group">
+    <label>*Date of Birth:</label>
+    <input type="text" placeholder="MM/DD/YYYY" id="CRN-number8" size="40" onkeyup="validateCRN8()" title="">
+    <span id="CRN-error8"></span></div>
+
+    <label>*Address:</label>
+
+    <div class="input-group1">
+    <form>&nbsp&nbsp&nbsp&nbspCity Municipality:
+    <select><option value="Select Cities">Select Cities</option>
+    <option value="">TAGOLOAN</option>
+    <option value="">CAGAYAN DE ORO CITY</option>
+   
+    </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBarangay:
+    <select><option value="Select Barangay">Select Barangay</option>
+    <option value="">BALUARTE</option>
+    <option value="">SIHAYON</option>
+    <option value="">MOHON</option> </select></br></br>
+    
+    <input type="checkbox" name ="I'm not a Robot">I'm not a Robot</br></br>
+    <input type="checkbox" name ="Accept the Terms of Service">Accept the Terms of Service</div></br>
+
+    <button onclick="return validateForm()">Submit</button>
+    <span id="Submit-error"></span>
+
+    <input type="button" value="Cancel">
+   
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+
+    </body>
+</html>
